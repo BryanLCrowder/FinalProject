@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row pad-left-right">
+      <span class="pull-left title" style="font-size:1.5em; padding: 1%;">Inventory</span>
+      <a class="btn btn-success pull-right" style="cursor: pointer;" routerLinkActive="active" [routerLink]="['new']">Add Car</a>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="center-panel">
+      <tuner-item *ngFor="let tunerEl of tuner"
+       [tuner]="tunerEl"></tuner-item>
+    </div>
+  </div>
+  </div>
